@@ -19,7 +19,6 @@ sub table {
     my %params = @_;
     my $rows = $params{rows} or die "Must provide rows!";
 
-    my $header_row = defined $params{header_row} ? $params{header_row} : 1;
     my $max_index = _max_array_index($rows);
 
     # here we go...
@@ -29,7 +28,6 @@ sub table {
     my $i = 0;
     foreach my $row ( @{ $rows }[0..$#$rows] ) {
         $i++;
-        next if $i==1 && !$header_row;
         push @table, join(
 	    ",",
 	    map { _encode(defined($row->[$_]) ? $row->[$_] : '') } (0..$max_index)
@@ -73,7 +71,7 @@ sub _max_array_index {
      ['bob',   'cpl', '98765321'],
      ['carol', 'brig gen', '8745'],
  ];
- print Text::Table::CSV::table(rows => $rows, header_row => 1);
+ print Text::Table::CSV::table(rows => $rows);
 
 
 =head1 DESCRIPTION
