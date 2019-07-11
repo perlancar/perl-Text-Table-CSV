@@ -1,13 +1,13 @@
-0.021   2019-01-17 (PERLANCAR)
+0.021   2019-01-17  Released-By: PERLANCAR
 
 	- [bugfix] header_row parameter should not be observed.
 
 
-0.020   2018-06-30 (PERLANCAR)
+0.020   2018-06-30  Released-By: PERLANCAR
 
 	- Observe option header_row.
 
 
-0.01    2015-12-18 (PERLANCAR)
+0.01    2015-12-18  Released-By: PERLANCAR
 
         - First release.
