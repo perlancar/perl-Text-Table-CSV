@@ -27,7 +27,6 @@ sub table {
 
     # then the data
     my $i = 0;
-    use DD; dd \%params;
     foreach my $row (@$rows) {
         $i++;
         next if $i==1 && !$header_row;
