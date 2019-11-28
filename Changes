@@ -1,6 +1,16 @@
+0.023   2019-11-29  Released-By: PERLANCAR; Urgency: medium
+
+        - No functional changes.
+
+        - Edit Changes for 0.022 (add explanation).
+
+
 0.022   2019-11-29  Released-By: PERLANCAR; Urgency: medium
 
-	- Observe option header_row.
+	- (Re-)observe option header_row. I didn't remmber why I changed it to
+          _not_ observe header_row, probably because it makes Text::Table::CSV
+          inadvertently produces "invalid" CSV; but there are valid reasons to
+          want to omit the header row. Hence I'm adding this back.
 
 
 0.021   2019-01-17  Released-By: PERLANCAR
